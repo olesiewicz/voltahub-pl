@@ -153,6 +153,10 @@ main > .section + .section { padding-block-start: calc(var(--section-padding) * 
 .linkedin { display: inline-grid; place-items: center; width: 27px; height: 27px; }
 .linkedin img { width: 24px; }
 .reveal-row { display: flex; flex-wrap: wrap; justify-content: center; gap: .1rem 1rem; }
+@media (min-width: 681px) {
+  .people .person { display: flex; flex-direction: column; align-items: center; }
+  .people .reveal-row { margin-top: auto; }
+}
 .reveal { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: inherit; gap: 0 .5rem; overflow-wrap: anywhere; }
 .mask { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .mask:empty { display: none; }

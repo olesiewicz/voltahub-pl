@@ -205,6 +205,15 @@ footer { border-top: 1px solid var(--line); }
 .gallery-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--soft); }
 .gallery-grid button { display: block; width: 100%; border: 0; padding: 0; background: none; }
 .gallery-grid figcaption { padding-block: .35rem; color: var(--muted); font-size: .9rem; }
+.gallery-modules { margin-top: clamp(1.75rem, 4vw, 3rem); }
+.gallery-modules h2 { font-size: clamp(1.65rem, 3.6vw, 2.8rem); }
+.gallery-module { padding-top: 1rem; border-top: 1px solid var(--line); margin-top: 1rem; }
+.gallery-module + .gallery-module { margin-top: 1.45rem; }
+.gallery-module-header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .15rem 1rem; margin-bottom: .55rem; }
+.gallery-module-header h3 { font-size: clamp(1.25rem, 2.75vw, 1.65rem); }
+.gallery-module-header a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; font-size: .9rem; }
+.gallery-module .gallery-grid img { object-fit: contain; }
+.gallery-module-plan img { background: white; border: 1px solid var(--line); }
 .lightbox { border: 0; background: var(--deep); color: white; padding: 1rem; width: min(92vw, 1100px); max-height: 94vh; }
 .lightbox[open] { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-rows: auto 1fr; align-items: center; gap: .5rem; }
 .lightbox::backdrop { background: #081b27d9; }

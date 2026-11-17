@@ -264,9 +264,22 @@ footer { border-top: 1px solid var(--line); }
   .contact-method { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: .4rem; }
   .contact-method .reveal { justify-content: center; }
   .map iframe { height: 280px; }
-  .lightbox { width: 96vw; padding: .55rem; }
-  .lightbox[open] { grid-template-columns: 1fr 1fr; }
-  .lightbox figure { grid-column: 1 / -1; grid-row: 2; }
+  .lightbox {
+    width: 96vw;
+    height: min(94vh, calc(68vh + 10rem));
+    height: min(94dvh, calc(68dvh + 10rem));
+    padding: .55rem;
+  }
+  .lightbox[open] { grid-template-columns: 1fr 1fr; grid-template-rows: auto minmax(0, 1fr) auto; }
+  .lightbox figure {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-rows: minmax(0, 1fr) auto;
+    align-self: stretch;
+    min-height: 0;
+  }
+  .lightbox img { height: 100%; min-height: 0; }
   .lightbox-prev { grid-row: 3; }
   .lightbox-next { grid-row: 3; justify-self: end; }
 }

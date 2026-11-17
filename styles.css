@@ -133,6 +133,9 @@ main > .section + .section { padding-block-start: calc(var(--section-padding) * 
 .space-copy dd { margin: 0; font-weight: 700; }
 .space-plan { display: grid; justify-items: center; gap: .5rem; background: var(--soft); padding: 1rem; }
 .space-plan img { width: 100%; height: auto; }
+.space-plan-image-link { display: block; width: 100%; }
+.space-plan-gallery-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+.space-plan-gallery-link:hover { text-decoration-thickness: 2px; }
 .space-plan figcaption, .space-note { color: var(--muted); font-size: .9rem; }
 .space-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1rem; margin-top: .45rem; }
 .space-actions > a { min-height: 44px; display: inline-flex; align-items: center; }

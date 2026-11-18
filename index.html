@@ -45,6 +45,8 @@
   </script>
   <link rel="stylesheet" href="styles.css?v=bio-align-1">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="privacy.css?v=1">
+  <script src="cookies.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#tresc">Przejdź do treści</a>
@@ -209,8 +211,11 @@
 <section id="lokalizacja" class="section section-soft"><div class="wrap">
   <div class="section-heading"><h2>Lokalizacja</h2></div>
   <div class="location-grid">
-    <div class="map">
-      <iframe title="VoltaHub w Mapach Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.9287524264987!2d20.924981275488296!3d52.18927616066455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935db87adbe01%3A0x4f614a149bcff565!2sVoltaHUB%20%E2%80%93%20Przestrze%C5%84%20Pe%C5%82na%20Energii%20%E2%80%93%20biura%20i%20miejsca%20postojowe!5e1!3m2!1spl!2spl!4v1794468363090!5m2!1spl!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <div class="map" data-google-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.9287524264987!2d20.924981275488296!3d52.18927616066455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935db87adbe01%3A0x4f614a149bcff565!2sVoltaHUB%20%E2%80%93%20Przestrze%C5%84%20Pe%C5%82na%20Energii%20%E2%80%93%20biura%20i%20miejsca%20postojowe!5e1!3m2!1spl!2spl!4v1794468363090!5m2!1spl!2spl">
+      <div class="map-fallback" data-map-fallback>
+        <strong>Mapa dojazdu do VoltaHub</strong>
+        <a class="button button-lime" href="https://maps.google.com/?cid=5719934454111139173" target="_blank" rel="noopener noreferrer">Otwórz w Mapach Google</a>
+      </div>
     </div>
     <div class="location-copy">
       <address><strong>ul. Jutrzenki 94</strong><br>02-230 Warszawa · Włochy</address>
@@ -240,6 +245,10 @@
 </div></section>
 
 </main>
+<div class="privacy-links" role="group" aria-label="Prywatność i cookies">
+  <a href="prywatnosc.html">Prywatność</a>
+  <button type="button" data-cookie-settings aria-controls="cookie-banner" aria-expanded="false" hidden>Ustawienia cookies</button>
+</div>
 <footer><div class="wrap footer-inner">
   <div class="footer-company">
     <img src="assets/volta-property.png" alt="Logo Volta Property" loading="lazy" width="210" height="91">

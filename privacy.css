@@ -5,8 +5,8 @@
   justify-content: center;
   gap: .3rem clamp(1rem, 4vw, 2rem);
   padding: .5rem 1rem;
-  border-top: 1px solid var(--line);
-  background: var(--white);
+  border-top: 1px solid var(--lime);
+  background: var(--lime);
 }
 
 .privacy-links a,

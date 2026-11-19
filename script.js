@@ -116,3 +116,23 @@ if (lightbox && typeof lightbox.showModal === 'function') {
   });
   lightbox.addEventListener('close', () => opener?.focus());
 }
+
+// Keep the same section or gallery image when switching language.
+for (const link of document.querySelectorAll('[data-language-link]')) {
+  if (location.hash) link.hash = location.hash;
+}
+const languagePicker = document.querySelector('.language-switcher');
+if (languagePicker) {
+  document.addEventListener('click', event => {
+    if (!languagePicker.contains(event.target)) languagePicker.open = false;
+  });
+  languagePicker.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      languagePicker.open = false;
+      languagePicker.querySelector('summary').focus();
+    }
+  });
+  window.addEventListener('hashchange', () => {
+    for (const link of document.querySelectorAll('[data-language-link]')) link.hash = location.hash;
+  });
+}

@@ -1,0 +1,2 @@
+/* German compounds must fit narrow cards without widening the page. */
+.bio, .feature { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
